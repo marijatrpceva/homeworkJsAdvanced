@@ -1,0 +1,9 @@
+.scroll {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.carousel img {
+    max-height: 400px; 
+   
+}

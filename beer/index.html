@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Beer</title>
+</head>
+<body >
+    <style>
+        body {
+            background-color: rgba(129, 83, 14, 0.212)
+        }
+        .navbar-custom{
+            background-color: rgba(218, 138, 19, 0.301) !important
+        }
+        #searchBtn {
+            background-color: rgba(224, 96, 10, 0.884);
+            color: black;
+            border-color:brown;
+        }
+        .card {
+            background-color:  rgba(218, 138, 19, 0.301) 
+        }
+        #result {
+            margin-left: 12rem !important;
+        }
+    </style>
+    <div class="container">
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light" >
+            <a class="navbar-brand" id="home" href="#">Beer Bar</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="allBeers" href="#">All Beers</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="random" href="#">Random Beer</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="pr-3">
+                        <select class="form-control" id="searchSelection">
+                            <option value="25">Show 25</option>
+                            <option value="10">Show 10</option>
+                            <option value="5">Show 5</option>
+                        </select>
+                    </div>
+                    <input class="form-control mr-sm-2" id="searchInput" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="searchBtn" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!-- End navbar -->
+
+    <main>
+        <div class="container mt-5 ">
+            <div class="carousel slide" id="main-carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-carousel" data-slide-to="1"></li>
+                    
+                </ol><!-- /.carousel-indicators -->
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 " src="first.jpg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Our Most Popular Beers</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="last.jpg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Beer</h3>
+                            <p>“Beer, if drank with moderation, softens the temper, cheers the spirit and promotes health.” –-Thomas Jefferson</p>
+                        </div>
+                    </div>
+                </div><!-- /.carousel-inner -->
+                
+                <a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only" aria-hidden="true">Prev</span>
+                </a>
+                <a href="#main-carousel" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only" aria-hidden="true">Next</span>
+                </a>
+            </div><!-- /.carousel -->
+        </div><!-- /.container -->
+      
+
+        <div class="container mt-5  mr-8" id="result">
+            HERE WE WILL PUT ALL THE RESULTS
+        </div>
+         <!--pagination-->
+        <div class="mx-auto" style="width: 200px; margin-top: 20px; margin-bottom: 20px" id="pag">
+            <button type="button" id="prev" >Previous</button>
+            <button type="button" id="next">Next</button>
+        </div>
+        
+    </div>
+   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
