@@ -139,8 +139,8 @@ function DataProcessingService() {
         let html = `<div class = "row" >`;
         for(let beer of beers) {
             //console.log(beer)
-            let col = `<div class= "col-md-3">
-                <div class="card " style="width: 18rem; height: 40rem  ">
+            let col = `<div class= "col-md-4" style="margin-bottom:18px">
+                <div class="card " style="width: 18rem;">
                     <img src="${beer.img}" height="300" class="card-img-top pic pt=2" alt="...">
                     <div class="card-body ">
                     <h5 class="card-title">${beer.name}</h5>
